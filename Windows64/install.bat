@@ -2,12 +2,12 @@
 echo Deploy Standalone
 
 
-::call deployConsole.bat
+call deployConsole.bat
 
-::call deployServer.bat
-::cd DroneServer
-::call install.bat
-::cd ..
+call deployServer.bat
+cd DroneServer
+call install.bat
+cd ..
 
 
 set RUNFILE="run.bat"
