@@ -11,9 +11,10 @@ del Windows64\*.zip
 echo f | xcopy /f /y ..\DroneGCS\ClientInstallation\Windows\Console-*-win-x64.zip Windows64\Console-1.%arg1%-win-x64.zip
 echo f | xcopy /f /y ..\DroneServer\ServerInstallation\Windows64\ServerCore-*-win-x64.zip Windows64\ServerCore-1.%arg1%-win-x64.zip
 
-C:\Users\taljmars\Workspace\
-
 echo --------------- Linux --------------
+del Linux32\*.tar
+echo f | xcopy /f /y ..\DroneGCS\ClientInstallation\Linux-32\Console-*-linux-x32.tar Linux32\Console-1.%arg1%-linux-x32.tar
+echo f | xcopy /f /y ..\DroneServer\ServerInstallation\Linux\ServerCore-*-linux.tar Linux32\ServerCore-1.%arg1%-linux.tar
 
 
 echo --------------- Pushing --------------
