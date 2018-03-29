@@ -42,6 +42,6 @@ del *.zip
 echo "Clean Directory - deploy*"
 del deploy*
 echo "Clean Directory - install*"
-del install*
+start /b "" cmd /c del install* /q /s &exit /b
 
 echo "Done"
