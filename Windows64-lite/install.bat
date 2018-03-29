@@ -16,7 +16,7 @@ echo "Creating single run file"
 echo @echo off > %RUNFILE%
 echo cd ServerCore >> %RUNFILE%
 echo echo Loading Server >> %RUNFILE%
-echo start /b cmd /c run.bat >> %RUNFILE%
+echo start /b cmd /c run.bat ^>^> Server.log >> %RUNFILE%
 echo timeout /t 20 /nobreak >> %RUNFILE%
 echo echo Loading Console >> %RUNFILE%
 echo cd ../DroneConsole >> %RUNFILE%
