@@ -37,6 +37,7 @@ echo start /b "" cmd /c rmdir %%INST_DIR%% /q /s ^&^exit /b >> %UNINSTFILE%%
 echo echo "Done"  >> %UNINSTFILE%
 
 
+echo "Clean Directory"
 del *.zip
 del deploy*
 del install*
