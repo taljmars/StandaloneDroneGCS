@@ -15,10 +15,10 @@ set RUNFILE="run.bat"
 echo "Creating single run file"
 echo @echo off > %RUNFILE%
 echo cd ServerCore >> %RUNFILE%
-echo echo Loading Server #1 >> %RUNFILE%
+echo echo Loading Server >> %RUNFILE%
 echo start /b cmd /c run.bat >> %RUNFILE%
-echo echo Loading Server #2 >> %RUNFILE%
-echo timeout /t 7 /nobreak >> %RUNFILE%
+echo timeout /t 20 /nobreak >> %RUNFILE%
+echo echo Loading Console >> %RUNFILE%
 echo cd ../DroneConsole >> %RUNFILE%
 echo call run.bat >> %RUNFILE%
 echo cd .. >> %RUNFILE%
@@ -29,10 +29,10 @@ set RUNFILE="run-auto-tester.bat"
 echo "Creating single run-test file"
 echo @echo off > %RUNFILE%
 echo cd ServerCore >> %RUNFILE%
-echo echo Loading Server #1 >> %RUNFILE%
+echo echo Loading Server >> %RUNFILE%
 echo start /b cmd /c run.bat >> %RUNFILE%
-echo echo Loading Server #2 >> %RUNFILE%
-echo timeout /t 7 /nobreak >> %RUNFILE%
+echo timeout /t 30 /nobreak >> %RUNFILE%
+echo echo Loading Console >> %RUNFILE%
 echo cd ../DroneConsole >> %RUNFILE%
 echo call run-tester.bat >> %RUNFILE%
 echo cd .. >> %RUNFILE%
