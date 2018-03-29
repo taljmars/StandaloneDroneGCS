@@ -5,9 +5,9 @@ echo Deploy Standalone
 call deployConsole.bat
 
 call deployServer.bat
-cd ServerCore
-call install.bat
-cd ..
+::cd ServerCore
+::call install.bat
+::cd ..
 
 
 set RUNFILE="run.bat"
